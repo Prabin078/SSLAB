@@ -1,0 +1,52 @@
+sem6b@iselab1:~$ lex 1.l
+sem6b@iselab1:~$ cc lex.yy.c -ll
+sem6b@iselab1:~$ ./a.out
+
+Characters: 33
+Words: 11
+Lines: 4
+Spaces: 8sem6b@iselab1:~$ 
+sem6b@iselab1:~$ 
+
+
+sem6b@iselab1:~$ lex 2.l
+sem6b@iselab1:~$ cc lex.yy.c -ll
+sem6b@iselab1:~$ ./a.out
+
+Commented Lines: 1 of 7
+sem6b@iselab1:~$ 
+sem6b@iselab1:~$ 
+sem6b@iselab1:~$ 
+
+
+sem6b@iselab1:~$ lex 3.l
+sem6b@iselab1:~$ cc lex.yy.c -ll
+sem6b@iselab1:~$ ./a.out
+Enter an expression(eg a-b;): a-b=7
+Indentfier: a
+Indentfier: b
+=Constant: 7
+
+sem6b@iselab1:~$ lex 4.l
+sem6b@iselab1:~$ cc lex.yy.c -ll
+sem6b@iselab1:~$ ./a.out
+#Indentfier: include
+ <Indentfier: stdio
+
+ not an identifier: .
+Indentfier: h
+>Indentfier: int
+ Indentfier: main
+(){   // Indentfier: printf
+() Indentfier: displays
+ Indentfier: the
+ Indentfier: string
+ Indentfier: inside
+ Indentfier: quotation
+   Indentfier: printf
+("Indentfier: Hello
+, Indentfier: World
+!");   Indentfier: return
+ ;}Number of identifiers: 15sem6b@iselab1:~$ ^C
+sem6b@iselab1:~$ 
+

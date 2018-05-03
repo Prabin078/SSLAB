@@ -1,0 +1,49 @@
+sem6b@iselab1:~/Desktop/yacc$ lex 1a.l
+sem6b@iselab1:~/Desktop/yacc$ yacc -d 1a.y
+sem6b@iselab1:~/Desktop/yacc$ gcc lex.yy.c y.tab.c -ll
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter expression: a+b+c
+Valid expression!
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter expression: a+(b+c
+Invalid expression!
+sem6b@iselab1:~/Desktop/yacc$ ^C
+sem6b@iselab1:~/Desktop/yacc$
+
+
+sem6b@iselab1:~$ cd Desktop/yacc
+sem6b@iselab1:~/Desktop/yacc$ lex 2b.l
+sem6b@iselab1:~/Desktop/yacc$ yacc -d 2b.y
+sem6b@iselab1:~/Desktop/yacc$ gcc lex.yy.c y.tab.c -ll
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter variable: s5
+Valid variable!
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter variable: 783459
+Invalid variable!
+
+sem6b@iselab1:~/Desktop/yacc$ lex 3b.l
+sem6b@iselab1:~/Desktop/yacc$ yacc -d 3b.y
+sem6b@iselab1:~/Desktop/yacc$ gcc lex.yy.c y.tab.c -ll
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter expression: 5+4
+Value: 9
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter expression: sjfh
+Invalid expression!
+
+sem6b@iselab1:~/Desktop/yacc$ lex 4b.l
+sem6b@iselab1:~/Desktop/yacc$ yacc -d 4b.y
+sem6b@iselab1:~/Desktop/yacc$ gcc lex.yy.c y.tab.c -ll
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter the string: hello
+Invalid string!
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter the string: avbd
+Invalid string!
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter the string: aaabbb
+Valid string!
+sem6b@iselab1:~/Desktop/yacc$ ./a.out
+Enter the string: a^2b^2
+Invalid string!
